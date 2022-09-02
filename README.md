@@ -16,6 +16,8 @@ Some required and useful modifications:
 - Remove Vulkan from Graphics APIs (this is required to build for Android)
 - Disable Render Outside Safe Space
 - Disable Start in Fullscreen Mode
+- Turn off multithreading
+- Install com.unity.xr.interaction.toolkit package (need to install by name, and click yes on dialog that appears with information about the input system)
 
 ## Development Tools
 - Created using Unity 2020.3.10f.1
@@ -23,10 +25,7 @@ Some required and useful modifications:
 
 ## Credits
 Code and scene structure is based on this tutorial:
-https://www.youtube.com/watch?v=vZalV7--_uA
-
-With code derived from this repo:
-https://github.com/dilmerv/UnityARFoundationEssentials
+https://www.youtube.com/playlist?list=PLb1h4A0yB97_ehIJzf25vmJ2MqScUuk--
 
 AR setup based on this tutorial:
 https://www.youtube.com/watch?v=R3OCUE9TwZk
