@@ -2,7 +2,7 @@
 Example project showing an AR measure tool in Unity.
 
 ## Supported Platforms
-This project is designed for use on both iOS and Android, but it has only been tested on Android.
+This project is designed for use on both iOS and Android.
 
 ## Running locally
 Use the following steps to run locally:
@@ -18,6 +18,8 @@ Some required and useful modifications:
 - Disable Start in Fullscreen Mode
 - Turn off multithreading
 - Install com.unity.xr.interaction.toolkit package (need to install by name, and click yes on dialog that appears with information about the input system)
+- Set Camera Usage Description on iOS build settings
+- Check ARKit in XR Plug-in Management in iOS build settings
 
 ## Development Tools
 - Created using Unity 2020.3.10f.1
