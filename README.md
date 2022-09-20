@@ -1,5 +1,7 @@
 # unity-ar-measure-example
-Example project showing an AR measure tool in Unity.
+Example project showing an AR measure tool in Unity. This project contains two scenes with different measurements techniques:
+- CursorMeasureScene: select button to add a line point within the onscreen reticle. Only 2 total line points can be added.
+- TapMeasureScene: tap anywhere on screen to add points to a continuously growing line.
 
 ## Supported Platforms
 This project is designed for use on both iOS and Android.
@@ -26,10 +28,14 @@ Some required and useful modifications:
 - Code edited using Visual Studio Code
 
 ## Credits
-Code and scene structure is based on this tutorial:
-https://www.youtube.com/playlist?list=PLb1h4A0yB97_ehIJzf25vmJ2MqScUuk--
-
 AR setup based on this tutorial:
 https://www.youtube.com/watch?v=R3OCUE9TwZk
+
+Code and scene structure used in CursorMeasureScene is based on this tutorial:
+https://www.youtube.com/playlist?list=PLb1h4A0yB97_ehIJzf25vmJ2MqScUuk--
+
+Code and scene structure used in TapMeasureScene is an amalgamation of the above and this tutorial:
+https://www.youtube.com/watch?v=R3OCUE9TwZk
+
 
 
