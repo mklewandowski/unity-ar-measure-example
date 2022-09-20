@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/CursorMeasureScene.unity
+    guid: f5daeb4f992dbab4998067078743c49d
+  - enabled: 1
+    path: Assets/Scenes/TapMeasureScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 76fd791aa16a25d43a5e7b562e6e65e4, type: 2}
