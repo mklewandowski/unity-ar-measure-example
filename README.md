@@ -1,7 +1,7 @@
 # unity-ar-measure-example
-Example project showing an AR measure tool in Unity. This project contains two scenes with different measurements techniques:
-- CursorMeasureScene: select button to add a line point within the onscreen reticle. Only 2 total line points can be added.
-- TapMeasureScene: tap anywhere on screen to add points to a continuously growing line.
+Example project showing an AR measure tool in Unity. This project contains two scenes with different measurement techniques:
+- CursorMeasureScene: select button to add a line point within the onscreen reticle. Line point is added at x, y reticle location and z axis intersection of plane. Only 2 total line points can be added.
+- TapMeasureScene: tap anywhere on screen to add points to a continuously growing line. Line point is added at x, y tapped location and z axis intersection of plane.
 
 ## Supported Platforms
 This project is designed for use on both iOS and Android.
@@ -13,15 +13,21 @@ Use the following steps to run locally:
 3. Install TextMeshPro
 
 ## Development
-Some required and useful modifications:
-- Set Minimum API Level to Android API level 24 or higher (this is required to build for Android)
-- Remove Vulkan from Graphics APIs (this is required to build for Android)
-- Disable Render Outside Safe Space
-- Disable Start in Fullscreen Mode
-- Turn off multithreading
+Setup steps to be able to include AR Foundation and build and deploy:
+- Install AR Foundation located in the Package Manager under AR Foundation
+- Install ARKit located in the Package Manager under AR Kit XR Plugin (required for iOS devices)
+- Install ARCore located in the Package Manager under AR Core XR Plugin (required for Android devices)
 - Install com.unity.xr.interaction.toolkit package (need to install by name, and click yes on dialog that appears with information about the input system)
-- Set Camera Usage Description on iOS build settings
-- Check ARKit in XR Plug-in Management in iOS build settings
+- In Project Settings > XR Plug-in Management, set the Plug-in Provider on the Android tab to ARCore
+- In Project Settings > XR Plug-in Management, set the Plug-in Provider on the iOS tab to ARKit
+- Ensure AR scenes contain an AR Session and AR Session Origin
+- Turn off multithreading
+- In Project Settings > Resolution and Presentation, disable Render Outside Safe Space
+- For Android, in Project Settings > Other Settings, set Minimum API Level to Android API level 24 or higher (this is required to build for Android)
+- For Android, in Project Settings > Other Settings, remove Vulkan from Graphics APIs (this is required to build for Android, need to uncheck Auto Graphics API first)
+- For Android, in Project Settings > Other Settings, Set Scripting Backend to IL2CPP
+- For Android, in Project Settings > Other Settings, Add ARM64 to Target Architectures
+- For iOS, set Camera Usage Description in build settings
 
 ## Development Tools
 - Created using Unity 2020.3.10f.1
