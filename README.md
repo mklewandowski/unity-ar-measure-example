@@ -9,7 +9,7 @@ This project is designed for use on both iOS and Android.
 ## Running locally
 Use the following steps to run locally:
 1. Clone this repo
-2. Open repo folder using Unity 2021.3.11f1
+2. Open repo folder using Unity 2021.3.15f1
 3. Install TextMeshPro
 
 ## Development
@@ -30,7 +30,7 @@ Setup steps to be able to include AR Foundation and build and deploy:
 - For iOS, set Camera Usage Description in build settings
 
 ## Development Tools
-- Created using Unity 2021.3.11f1
+- Created using Unity 2021.3.15f1
 - Code edited using Visual Studio Code
 
 ## Credits
